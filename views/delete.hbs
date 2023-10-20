@@ -1,0 +1,11 @@
+{{> list}}
+<div class="partial-overlay"{{#unless continuity}} style="animation: slide 0.3s"{{/unless}}>
+    <a href="/" class="close-button"></a>
+    <h2 class="partial-overlay-title">Delete e-mail</h2>
+    <form name="form" action="{{url}}" method="POST" novalidate>
+        <div class="form-paragraph">
+            <p>Do you want to delete the email <strong>{{username}}</strong> and all files associated with it permanently?</p>
+        </div>
+        <button class="form-button warning">Permanently delete</button>
+    </form>
+</div>
